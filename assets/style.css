@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 14%, rgba(5,162,168,1) 59%, rgba(0,212,255,1) 92%);
+}
+
+.app-title {
+    font-size: 60px;
+    font-family: "Poppins";
+    font-weight: 500;
+}
