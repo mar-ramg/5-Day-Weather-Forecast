@@ -16,15 +16,39 @@
 </head>
 
 <body>
+<main>
+        
+    <header class="title">
+        <h1 class="app-title"><i class="fas fa-cloud-sun-rain"></iclass></i>Weather Dashboard</h1>
+    </header>
 
+    <section class="col-12 col-sm-12 col-md-4 float-left">
+        <div class="card">
+            <h3 class="card-header text-uppercase">Search For A City</h3>
+            <div id="user-form" class="card-body">
+                <input type="text" id="myInput" placeholder="City Name..."/>
+                <button class="btn" id="searchBtn">Search</button>
+            </div>
+        </div>
 
+        <div class="card-history">
+            <h3 class="card-header text-uppercase">Search History</h3>
+        </div>        
+    </section>
 
+    <section class="col-12 col-sm-12 col-md-8 float-right">
+        <div>
+            <h2 class="subtitle text-uppercase">Current Weather</h2>
+            <div class="city"></div>
+        </div>
 
+        <div>
+            <h2 class="subtitle text-uppercase">5 Day Forecast</h2>
+            <div class="five-day"></div>
+        </div>
+    </section>
 
-
-
-
-
+</main>
 
     <!--JQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
