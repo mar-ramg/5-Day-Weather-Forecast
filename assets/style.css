@@ -3,9 +3,7 @@
 }
 
 body {
-    background-image: url(./images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: grey;
 }
 
 .title {
@@ -17,33 +15,32 @@ body {
     background: linear-gradient(90deg, rgba(2,0,36,1) 14%, rgba(5,162,168,1) 59%, rgba(0,212,255,1) 92%);
 }
 
-.app-title {
-    font-size: 60px;
-    font-family: "Poppins";
-    font-weight: 500;
-}
-
-.card-header {
-    font-size: 35px;
-    font-family: "Poppins";
-    font-weight: 400;
-}
-
-.btn {
-    background-color: rgba(5,162,168,1);
-    color: white;
-}
-
-.card-header {
-    margin-top: 30px;
+.search-column{
     background-color: white;
-    font-size: 35px;
-    font-family: "Poppins";
-    font-weight: 400;
+    border-radius: 10px;
 }
 
-h2 {
-    font-family: "Poppins";
-    font-size: 40px;
-    font-weight: 400;
+.list-group-item{
+    line-height: 0.5;
+    border: none;
+}
+.card-body{
+    margin-top: 30px;
+}
+
+span.severe{
+    padding: 3px;
+    background-color: red;
+    color:white;
+}
+
+span.moderate{
+    padding: 3px;
+    background-color: yellow;
+}
+
+span.favorable{
+    padding: 3px;
+    background-color: green;
+    color:white;
 }
