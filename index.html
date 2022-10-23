@@ -2,57 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5 Day Weather Forecast</title>
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <!--Font Awesome-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <!--Style CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <title>5-Day-Weather-Forecast</title>
 </head>
-
 <body>
-<main>
-
-    <header class="title">
-        <h1 class="app-title"><i class="fas fa-cloud-sun-rain"></i>Weather Dashboard</h1>
+    <header class = "title">
+        <h1>Weather Dashboard</h1>
     </header>
-
-    <section class="col-12 col-sm-12 col-md-4 float-left">
-        <div class="card">
-            <h3 class="card-header text-uppercase">Search For A City</h3>
-            <div id="user-form" class="card-body">
-                <input type="text" id="myInput" placeholder="City Name..."/>
-                <button class="btn" id="searchBtn">Search</button>
+    <main class="container-fluid">
+        <div class = "row">
+            <div class="col-12 col-md-3 p-2 search-column">
+                <form class = "border p-2" id = "city-search-form">
+                    <h4>Search for a City</h2>
+                    <input id="city" type = "text" autofocus = "true" class = "form-input"/>
+                    <button class = "btn btn-primary" type = "submit">Search</button>
+                </form>
+                <div class = "past-search border" id = "past-search-buttons"></div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class = "row border selected-city" id = "current-forecast">
+                    <div class = "col-12">
+                        <h2 id="searched-city"></h2>
+                        <div id = "current-weather-container" class = "list-group"></div>
+                    </div>  
+                </div>
+                <div class = "row border" id = "five-day-forecast">
+                        <h2 class= "col-12" id = "forecast"></h2>
+                        <div class = "d-flex" id = "fiveday-container"></div>
+                </div>  
             </div>
         </div>
-
-        <div class="card-history">
-            <h3 class="card-header text-uppercase">Search History</h3>
-        </div>        
-    </section>
-
-    <section class="col-12 col-sm-12 col-md-8 float-right">
-        <div>
-            <h2 class="subtitle text-uppercase bg-light">Current Weather</h2>
-            <div class="city"></div>
-        </div>
-
-        <div>
-            <h2 class="subtitle text-uppercase bg-light">5 Day Forecast</h2>
-            <div class="five-day"></div>
-        </div>
-    </section>
-
-</main>
-
-    <!--JQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Custom JavaScript-->
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
