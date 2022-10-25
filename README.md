@@ -11,3 +11,4 @@ When the user inputs a city and searches, it saves into the local storage after 
 ![weather screenshot](https://user-images.githubusercontent.com/110949754/197895007-3c0aa22e-0e85-4756-824d-57f87110d161.PNG)
 
 # Link to Deployed Application
+https://mar-ramg.github.io/5-Day-Weather-Forecast/ 
